@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "dgSpecHash": "wiA643p/oGoUAWo5kxJJ+2DFn/SPSnYZ6ucpP4BTKrypAy57LjicUSS0khu0Vpp6oti56jrg5OnHYLfY+xxqRA==",
+  "success": true,
+  "projectFilePath": "D:\\API\\ApiApplication1\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\sanjeev_kushvaha\\.nuget\\packages\\microsoft.aspnetcore.authentication.negotiate\\6.0.10\\microsoft.aspnetcore.authentication.negotiate.6.0.10.nupkg.sha512",
+    "C:\\Users\\sanjeev_kushvaha\\.nuget\\packages\\microsoft.aspnetcore.connections.abstractions\\6.0.10\\microsoft.aspnetcore.connections.abstractions.6.0.10.nupkg.sha512",
+    "C:\\Users\\sanjeev_kushvaha\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\sanjeev_kushvaha\\.nuget\\packages\\microsoft.extensions.features\\6.0.10\\microsoft.extensions.features.6.0.10.nupkg.sha512",
+    "C:\\Users\\sanjeev_kushvaha\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\sanjeev_kushvaha\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\sanjeev_kushvaha\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\sanjeev_kushvaha\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\sanjeev_kushvaha\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512",
+    "C:\\Users\\sanjeev_kushvaha\\.nuget\\packages\\system.directoryservices.protocols\\6.0.1\\system.directoryservices.protocols.6.0.1.nupkg.sha512",
+    "C:\\Users\\sanjeev_kushvaha\\.nuget\\packages\\system.io.pipelines\\6.0.3\\system.io.pipelines.6.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
