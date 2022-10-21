@@ -14,7 +14,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<WalksDbContext>(options =>
 {
-    options.UseSqlServer(builder.Configuration.GetConnectionString(Walks));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("Walks"));
 });
 
 builder.Services.AddAuthentication(NegotiateDefaults.AuthenticationScheme)
