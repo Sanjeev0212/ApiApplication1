@@ -1,41 +1,42 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System.Net.WebSockets;
 using System.Runtime;
 using WebApplication1.Models.Domain;
 
 namespace WebApplication1.Controllers
 {
     [ApiController]
-    [Route("[Controller]")]
+    [Route("[controller]")]
     public class RegionsController : Controller
     {
         [HttpGet]
-        public IActionResult GetAllRegion()
-        {
-            var region = new List<Region>()
+       public IActionResult GetAllRegions() {
+            var regions = new List<Region>()
             {
                 new Region
                 {
                     Id=Guid.NewGuid(),
                     Name="Wellington",
-                    Code=321,
+                    Code=101,
                     Area=221202,
-                    Lat=-1.8822,
+                    Lat=-1.2554,
                     Long=299.88,
                     Population=50000
+
                 },
                 new Region
                 {
                     Id=Guid.NewGuid(),
-                    Name="Auckl",
-                    Code=212,
-                    Area=221201,
-                    Lat=-1.8822,
-                    Long=299.88,
-                    Population=50000
+                    Name="Auckland",
+                    Code=102,
+                    Area=221203,
+                    Lat=-1.433,
+                    Long=399.88,
+                    Population=30000
+
                 }
             };
-            return Ok(region);
-        }
-        
+            return Ok(regions);
+       }
     }
 }
