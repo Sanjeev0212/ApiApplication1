@@ -6,14 +6,18 @@ namespace WebApplication2.Repositories
     public class RegionRepository : IRegionRepository
     {
         private readonly WalksDbContext walksDbContext;
+#pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
         public RegionRepository(WalksDbContext walksDbContext)
+#pragma warning restore CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
         {
 
         }
 
-        public IEnumerable<Region> GetAll()
+        public WalksDbContext GetWalksDbContext()
         {
-            return walksDbContext.Regions.ToList();
+            return walksDbContext;
         }
+
+        public IEnumerable<Region> GetAll(WalksDbContext walksDbContext) => walksDbContext.Regions.ToList();
     }
 }
