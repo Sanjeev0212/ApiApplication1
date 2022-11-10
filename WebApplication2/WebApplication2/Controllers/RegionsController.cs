@@ -1,6 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using WebApplication2.Model.Domain;
 using WebApplication2.Repositories;
+using WebApplication2.Model.DTO;
+using System.Net.WebSockets;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
 
 namespace WebApplication2.Controllers
 {
@@ -14,10 +17,11 @@ namespace WebApplication2.Controllers
         {
             this.regionRepository = regionRepository;
         }
+
         [HttpGet]
-        public IActionResult GetAllRegions()
+        public IActionResult GetAllRegion()
         {
-            var regions=regionRepository.GetAll();
+            var regions= regionRepository.GetAll();
             return Ok(regions);
         }
     }
