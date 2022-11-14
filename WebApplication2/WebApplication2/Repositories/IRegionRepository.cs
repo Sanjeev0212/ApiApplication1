@@ -4,8 +4,7 @@ namespace WebApplication2.Repositories
 {
     public interface IRegionRepository
     {
-        IEnumerable<Region> GetAll();
-
-       
+        IEnumerable<Region> GetAll(object v);
+        object GetWalksDbContext();
     }
 }

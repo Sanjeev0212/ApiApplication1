@@ -9,9 +9,30 @@ namespace WebApplication2.Repositories
         {
             this.walksDbContext = walksDbContext;
         }
+
+        public WalksDbContext GetWalksDbContext()
+        {
+            return walksDbContext;
+        }
+
+        public IEnumerable<Region> GetAll(WalksDbContext walksDbContext) => walksDbContext.Regions.ToList();
+
+        /// <exception cref="NotImplementedException"></exception>
         public IEnumerable<Region> GetAll()
         {
-            return walksDbContext.Regions.ToList();
+            throw new NotImplementedException();
         }
-     }
+
+        /// <exception cref="NotImplementedException"></exception>
+        public IEnumerable<Region> GetAll(object v)
+        {
+            throw new NotImplementedException();
+        }
+
+        /// <exception cref="NotImplementedException"></exception>
+        object IRegionRepository.GetWalksDbContext()
+        {
+            throw new NotImplementedException();
+        }
+    }
 }
