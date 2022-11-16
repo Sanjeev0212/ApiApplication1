@@ -8,6 +8,8 @@
 
         public string? Name { get; set; }
 
+        public string? Regions { get; set; }
+
         public double Area { get; set; }
 
         public double Lat { get; set; }
@@ -20,7 +22,7 @@
 
         public IEnumerable<Walks>? Walks { get; set; }
 
-
+        
     }
 
 }

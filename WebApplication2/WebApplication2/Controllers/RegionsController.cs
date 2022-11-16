@@ -1,24 +1,25 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using WebApplication2.Repositories;
-
+using WebApplication2.Model.Domain;
 namespace WebApplication2.Controllers
 {
-    [Microsoft.AspNetCore.Mvc.ApiController]
+    [ApiController]
     [Route("[controller]")]
     public class RegionsController : Controller
     {
-        private readonly IRegionRepository regionRepository;
-
-        public RegionsController(IRegionRepository regionRepository)
-        {
-            this.regionRepository = regionRepository;
-        }
-
         [HttpGet]
-        public IActionResult GetAllRegion()
+        public IActionResult GetAllRegions()
         {
-            var regions= regionRepository.GetAll(regionRepository.GetWalksDbContext());
-            return Ok(regions);
+            var regions = new List<Region>()
+            {
+                new Region()
+                {
+                    Id=Guid.NewGuid(),
+                    Name="Wellington",
+                    Code=105,
+                    Area=22123,
+                    Long
+                }
+            }; 
         }
     }
 }
