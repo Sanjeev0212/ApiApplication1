@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using NzWalks.Data;
+using NzWalks.Repository;
 
 internal class Program
 {
@@ -17,6 +18,7 @@ internal class Program
         {
             DbContextOptionsBuilder dbContextOptionsBuilder = options.UseSqlServer(builder.Configuration.GetConnectionString("NzWalks"));
         });
+        builder.Services.AddScoped<IRegionRepository, RegionRepository>();
         var app = builder.Build();
 
         // Configure the HTTP request pipeline.
