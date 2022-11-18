@@ -17,5 +17,11 @@ namespace NzWalks.Repository
             // ToListAsync is use for Asynchronous, await and async is also use in asynchronous 
             return await nzWalksDbContext.Regions.ToListAsync();
         }
+
+        public async Task<Region> GetAsync(Guid id)
+        {
+           return await nzWalksDbContext.Regions.FirstOrDefaultAsync(x => x.Id == id);
+           
+        }
     }
 }
