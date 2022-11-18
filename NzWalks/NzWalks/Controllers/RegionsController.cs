@@ -22,9 +22,9 @@ namespace NzWalks.Controllers
   
 
         [HttpGet]
-        public IActionResult GetAllRegions()
+        public async Task<IActionResult> GetAllRegions()
         {
-            var regions = regionRepository.GetAll();
+            var regions = await regionRepository.GetAllAsync();
             /*
             //Return Region DTO 
             var regionsDTO = new List<Models.DTO.Region>();

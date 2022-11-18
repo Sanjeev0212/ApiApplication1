@@ -3,7 +3,7 @@
 namespace NzWalks.Repository
 {
     public interface IRegionRepository
-    {
-        IEnumerable<Region> GetAll();
+    {   // Task use for asynchronous GetAll-> GetAllAsync
+        Task<IEnumerable<Region>> GetAllAsync();
     }
 }

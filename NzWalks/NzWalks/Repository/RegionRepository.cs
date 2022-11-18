@@ -1,4 +1,5 @@
-﻿using NzWalks.Data;
+﻿using Microsoft.EntityFrameworkCore;
+using NzWalks.Data;
 using NzWalks.Models.Domain;
 
 namespace NzWalks.Repository
@@ -11,9 +12,10 @@ namespace NzWalks.Repository
         {
             this.nzWalksDbContext = nzWalksDbContext;
         }
-        public IEnumerable<Region> GetAll()
+        public async Task<IEnumerable<Region>> GetAllAsync()
         {
-            return nzWalksDbContext.Regions.ToList();
+            // ToListAsync is use for Asynchronous, await and async is also use in asynchronous 
+            return await nzWalksDbContext.Regions.ToListAsync();
         }
     }
 }
